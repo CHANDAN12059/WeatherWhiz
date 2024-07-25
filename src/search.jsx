@@ -6,10 +6,10 @@ import "./search.css";
 function Search({ updateInfo }) {
     const [city, setCity] = useState("");
     const [error, setError] = useState(false);
-
+const Key = import.meta.env.VITE_API_KEY
     async function getWeatherInfo() {
         try {
-            const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${"04068023def03ff16fcded3cb67dcec3"}&units=metric`);
+            const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${Key}&units=metric`);
             const data = await api.json();
 
             const result = {
