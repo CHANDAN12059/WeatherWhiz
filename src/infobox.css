@@ -1,0 +1,15 @@
+.info-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.card{
+    border-radius: 20rem;
+}
+.city-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
